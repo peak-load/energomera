@@ -1,9 +1,11 @@
+// Package energomera provides primitives for decoding and encoding
+// GOST-R MEK 61107-2001 (ГОСТ Р МЭК 61107-2001) protocol messages.
 package energomera
 
 import (
 	"fmt"
 )
-// Energomera data decoder
+// Energomera data decoder is used to decode message received from bus
 func DataDecode(sdata []byte) (msg map[string]string) {
 
 	msg = map[string]string{
@@ -64,7 +66,7 @@ func DataDecode(sdata []byte) (msg map[string]string) {
 	return
 }
 
-// Energomera data encoder
+// Energomera data encoder is used to encode data which will be sent over bus
 func DataEncode(msg map[string]string) (sdata []byte) {
 	if len(msg["head"]) > 0 {
 		sdata = append(sdata, []byte{0x01}...)
