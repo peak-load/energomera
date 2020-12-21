@@ -5,7 +5,14 @@ which can be used to communicate with counter over rs-485 protocol.
                                                                                                                                                                                                                                                                             
 Cli example application is available at https://github.com/peak-load/energomera-cli                                                                                                                                                                                                                 
                                                                                                                                                                                                                                                                             
-### Usage  / available functions                                                                                                                                                                                                                                            
+### Usage  / available functions  
+
+```go
+import (
+     "github.com/peak-load/energomera"
+)
+```
+
 Package provides two functions:
 * energomera.DataDecode(sdata []byte) (msg map[string]string)                                                                                                                                                                                                                 
 * energomera.DataEncode(msg map[string]string) (sdata []byte)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
