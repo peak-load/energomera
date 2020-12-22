@@ -1,7 +1,9 @@
 # Energomera protocol encoder / decoder package                                                                                                                                                                                                                            
                                                                                                                                                                                                                                                                             
 This Go package is fully based on Python code which is used to encode and decode Energomera protocol messages,                                                                                                                                                              
-which can be used to communicate with electricity meter(s) over rs-485 protocol.                                                                                                                                                                                                         
+which can be used to communicate with electricity meter(s) over rs-485 protocol.
+
+For more information check the [source code documentation](https://pkg.go.dev/github.com/peak-load/energomera).
 
 # Projects using energomera package
 * CLI example application for getting data https://github.com/peak-load/energomera-cli
